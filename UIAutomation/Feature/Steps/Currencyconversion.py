@@ -31,6 +31,7 @@ def click_convert_button(context):
 @then("the converted value should be read and display")
 def display_value(context):
     calculated_currency = context.Homepage_obj.retreive_text()
+    print(calculated_currency)
     time.sleep(5)
 
 
