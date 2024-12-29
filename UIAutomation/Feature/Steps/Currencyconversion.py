@@ -2,10 +2,9 @@ import time
 
 from behave import given,when,then
 
-from Feature.PageLocators import PageLoc
-from Feature.PageObjects.HomePage import Homepage
-from Feature.Utilities.Driverinitialization import get_driver
-from Feature.Utilities.TestData import Testdata
+from HomePage import Homepage
+from PageLocators import PageLoc
+from Utilities.TestData import Testdata
 
 
 @given("the User launch the url in browser")

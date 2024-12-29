@@ -1,7 +1,8 @@
 import time
 
-from Feature.PageLocators import PageLoc
-from Feature.PageObjects.Genericfunctions import GenericMethods
+from Genericfunctions import GenericMethods
+from PageLocators import PageLoc
+
 
 class Homepage(GenericMethods) :
 

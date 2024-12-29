@@ -1,4 +1,4 @@
-from Feature.Utilities.Driverinitialization import get_driver
+from Utilities.Driverinitialization import get_driver
 
 
 def before_all(context):

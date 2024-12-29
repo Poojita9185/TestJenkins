@@ -1,5 +1,6 @@
 from selenium import webdriver
-from Feature.Utilities.TestData import Testdata
+
+from Utilities.TestData import Testdata
 
 
 def get_driver():
