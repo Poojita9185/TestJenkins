@@ -1,6 +1,6 @@
 import time
 
-from Genericfunctions import GenericMethods
+from Feature.PageObjects.Genericfunctions import GenericMethods
 from PageLocators import PageLoc
 import logging
 
@@ -19,7 +19,6 @@ class Homepage(GenericMethods) :
 
     def retreive_text(self):
         value = self.return_text(PageLoc.overall_currency_xpath)
-        logging.info(value)
         return value
 
 

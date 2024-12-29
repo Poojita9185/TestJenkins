@@ -2,9 +2,10 @@ import time
 
 from behave import given,when,then
 
-from HomePage import Homepage
+from Feature.PageObjects.HomePage  import Homepage
 from PageLocators import PageLoc
 from Utilities.TestData import Testdata
+import logging
 
 
 @given("the User launch the url in browser")
@@ -30,7 +31,7 @@ def click_convert_button(context):
 @then("the converted value should be read and display")
 def display_value(context):
     calculated_currency = context.Homepage_obj.retreive_text()
-    print(calculated_currency)
+    logging.info("The calculated currency value is: %s", calculated_currency)
     time.sleep(5)
 
 
